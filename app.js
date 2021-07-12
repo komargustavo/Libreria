@@ -25,7 +25,7 @@ var coneccion = mysql2.createConnection(mysqlConfig);
 
 coneccion.connect((error) => {
   if (error) {
-      throw error;
+      console.log( error);
   }
 
   console.log('Conexion con base de datos mysql establecida');
